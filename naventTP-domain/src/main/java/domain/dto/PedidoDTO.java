@@ -5,7 +5,7 @@ package domain.dto;
  */
 public class PedidoDTO {
     private String nombre;
-    private int monto;
+    private long monto;
     private int descuento;
 
     public String getNombre() {
@@ -16,7 +16,7 @@ public class PedidoDTO {
         this.nombre = nombre;
     }
 
-    public int getMonto() {
+    public long getMonto() {
         return monto;
     }
 

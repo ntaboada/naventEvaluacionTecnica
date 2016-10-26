@@ -8,7 +8,7 @@ import domain.dto.PedidoDTO;
 public class Pedido {
     private Integer idPedido;
     private String nombre;
-    private int monto;
+    private long monto;
     private int descuento;
 
     public Pedido(PedidoDTO pedidoDTO) {
@@ -33,11 +33,11 @@ public class Pedido {
         this.nombre = nombre;
     }
 
-    public int getMonto() {
+    public long getMonto() {
         return monto;
     }
 
-    public void setMonto(int monto) {
+    public void setMonto(long monto) {
         this.monto = monto;
     }
 
