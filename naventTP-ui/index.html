@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- Material Design Bootstrap -->
+    <link href="node_modules/MDBootstrap/css/mdb.min.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/MDBootstrap/css/mdb.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles-->
+    <link href="app/styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+  <div class="view">
+  <h2 class="text-center elegant-color white-text"><i class="fa fa-check" aria-hidden="true"></i>Solicitud de Pedidos</h2>
+  <br><br>
+  <div class="container">
+    <div class="row">
+          <div class="col-xs-8">
+            <div class="box">
+                  <form id="pedidosForm" onsubmit="test();">
+                      <div class="md-form">
+                          <i class="fa fa-user prefix"></i>
+                          <input type="text" id="nombre" class="form-control">
+                          <label for="nombre">Nombre</label>
+                      </div>
+                      <div class="md-form">
+                          <i class="fa fa-envelope prefix"></i>
+                          <input type="text" id="monto" class="form-control">
+                          <label for="monto">Monto</label>
+                      </div>
+                      <div class="md-form">
+                          <i class="fa fa-tag prefix"></i>
+                          <input type="text" id="descuento" class="form-control">
+                          <label for="descuento">Descuento</label>
+                      </div>
+                      <br>
+                      <div class="col-md-6 center-block">
+                          <button type="submit" class="btn btn-default">Submit</button>
+                      </div>
+                  </form>
+            </div>
+          </div>
+    </div>
+  </div>
+  </div>
+    <script src="app/js/main.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/MDBootstrap/js/mdb.min.js"></script>
+    <script type="text/javascript" src="node_modules/MDBootstrap/js/tether.min.js"></script>
+  </body>
+
+</html>

@@ -1,6 +1,6 @@
 package domain.entity;
 
-import dto.PedidoDTO;
+import domain.dto.PedidoDTO;
 
 import javax.persistence.*;
 

@@ -1,6 +1,6 @@
 package domain.service;
 
-import dto.PedidoDTO;
+import domain.dto.PedidoDTO;
 import domain.entity.Pedido;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

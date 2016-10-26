@@ -1,0 +1,26 @@
+/* YOUR CUSTOM STYLES */
+html,
+body,
+.view {
+  height: 100%;
+}
+
+.view {
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn{
+  margin-left: 250px;
+  min-width:100px;
+}
+
+.box{
+  margin-left: 250px !important;
+
+}
+
+
