@@ -1,11 +1,10 @@
-package service;
+package domain.service;
 
 import dto.PedidoDTO;
-import entity.Pedido;
+import domain.entity.Pedido;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-import repository.IPedidosRepository;
+import domain.repository.IPedidosRepository;
 
 /**
  * Created by nicolas.taboada on 25/10/2016.
@@ -22,10 +21,14 @@ public class PedidosService {
         iPedidosRepository.save(pedido);
     }
 
-    @Cacheable
+
     public Pedido retrievePedido(Long idPedido){
-        Pedido pedidoBuscado = iPedidosRepository.findOne(idPedido);
+        Pedido pedidoBuscado = iPedidosRepository.findByidPedido(idPedido);
         return pedidoBuscado;
     }
 
+    public Pedido retrievePedido(String nombre){
+        Pedido pedidoBuscado = iPedidosRepository.findByNombre(nombre);
+        return pedidoBuscado;
+    }
 }

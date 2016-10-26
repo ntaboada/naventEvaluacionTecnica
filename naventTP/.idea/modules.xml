@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/pedidos.iml" filepath="$PROJECT_DIR$/pedidos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../naventEvaluacion-SpringIntegration/pedidos (1).iml" filepath="$PROJECT_DIR$/../naventEvaluacion-SpringIntegration/pedidos (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/../naventEvaluacionTecnica-SpringIntegration/pedidos (1).iml" filepath="$PROJECT_DIR$/../naventEvaluacionTecnica-SpringIntegration/pedidos (1).iml" />
     </modules>
   </component>
 </project>

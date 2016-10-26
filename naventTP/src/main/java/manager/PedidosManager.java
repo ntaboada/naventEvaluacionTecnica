@@ -30,13 +30,21 @@ public class PedidosManager {
         return pedido;
     }
     public void updatePedido(Pedido pedido) {
-        pedidosDAO.insertOrUpdate(pedido);
-        bumexMemcached.set(pedido.getIdPedido().toString(), pedido);
+        // Si no esta en el cache, buscar en DB
+        Pedido pedidoPersistente = (Pedido) this.bumexMemcached.get(String.valueOf(pedido.getIdPedido()));
+
+        if (pedidoPersistente == null) {
+            pedidoPersistente = pedidosDAO.select(pedido.getIdPedido());
+        }
+        pedidosDAO.insertOrUpdate(pedidoPersistente);
     }
 
     public void deletePedido(Pedido pedido) {
-            bumexMemcached.delete(pedido.getIdPedido().toString());
-            pedidosDAO.delete(pedido);
+
+        if (this.bumexMemcached.get(String.valueOf(pedido.getIdPedido())) != null) {
+            this.bumexMemcached.delete(String.valueOf(pedido.getIdPedido()));
+        }
+        pedidosDAO.delete(pedido);
     }
 
     public Pedido searchPedido(Integer idPedido) {

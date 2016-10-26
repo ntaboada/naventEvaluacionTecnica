@@ -7,8 +7,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../naventTP/pom.xml" />
-        <option value="$PROJECT_DIR$/../naventEvaluacion-SpringIntegration/pom.xml" />
+        <option value="$PROJECT_DIR$/../naventEvaluacionTecnica-SpringIntegration/pom.xml" />
       </list>
     </option>
   </component>

@@ -8,19 +8,13 @@ import domain.Pedido;
 public class PedidosDAO implements Repository<Pedido> {
 
     @Override
-    public void insertOrUpdate(Pedido obj) {
-
-    }
+    public void insertOrUpdate(Pedido obj) {}
 
     @Override
-    public void delete(Pedido obj) {
-
-    }
+    public void delete(Pedido obj) { }
 
     @Override
-    public Pedido select(Integer idObj) {
-        return null;
-    }
+    public Pedido select(Integer idObj) {return null;}
 
 
 }

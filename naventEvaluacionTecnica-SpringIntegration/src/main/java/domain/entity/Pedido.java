@@ -1,4 +1,4 @@
-package entity;
+package domain.entity;
 
 import dto.PedidoDTO;
 
@@ -20,6 +20,10 @@ public class Pedido {
     private int monto;
     @Column
     private int descuento;
+
+    public Pedido(){
+
+    }
 
     public Pedido(PedidoDTO pedidoDTO) {
         this.nombre = pedidoDTO.getNombre();
