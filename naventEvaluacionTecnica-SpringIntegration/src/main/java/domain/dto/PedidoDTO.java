@@ -5,7 +5,7 @@ package domain.dto;
  */
 public class PedidoDTO {
     private String nombre;
-    private int monto;
+    private double monto;
     private int descuento;
 
     public String getNombre() {
@@ -16,11 +16,11 @@ public class PedidoDTO {
         this.nombre = nombre;
     }
 
-    public int getMonto() {
+    public double getMonto() {
         return monto;
     }
 
-    public void setMonto(int monto) {
+    public void setMonto(double monto) {
         this.monto = monto;
     }
 

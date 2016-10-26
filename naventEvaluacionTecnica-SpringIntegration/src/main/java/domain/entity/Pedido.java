@@ -17,7 +17,7 @@ public class Pedido {
     @Column
     private String nombre;
     @Column
-    private int monto;
+    private double monto;
     @Column
     private int descuento;
 
@@ -47,7 +47,7 @@ public class Pedido {
         this.nombre = nombre;
     }
 
-    public int getMonto() {
+    public double getMonto() {
         return monto;
     }
 
