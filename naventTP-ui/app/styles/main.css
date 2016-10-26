@@ -33,9 +33,3 @@ body,
 	margin-bottom: 5px;
 }
 
-#spinner{
-    position: absolute;
-    left: calc(50% - 160px);
-    top: calc(50% - 160px);
-    opacity: 0;
-}
