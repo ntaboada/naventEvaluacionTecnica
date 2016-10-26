@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="naventTP" />
+        <module name="pedidos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="naventTP" target="1.6" />
+      <module name="pedidos" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

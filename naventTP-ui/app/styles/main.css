@@ -20,7 +20,22 @@ body,
 
 .box{
   margin-left: 250px !important;
-
+  position: relative;
 }
 
 
+.error_msgs{
+	color: red;
+	margin-left: 3rem;
+}
+
+.md-form .prefix ~ input{
+	margin-bottom: 5px;
+}
+
+#spinner{
+    position: absolute;
+    left: calc(50% - 160px);
+    top: calc(50% - 160px);
+    opacity: 0;
+}
